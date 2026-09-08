@@ -1,0 +1,187 @@
+/* ================================================================== */
+/* =========================GLOBAL STYLING=========================== */
+/* ================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+:root {
+    --primary-color: rgb(31, 131, 94);
+    --secondary-color: rgb(148, 187, 89);
+    --accent-color: rgb(26, 26, 26);
+    --secondary-bg-color: rgba(148, 187, 89, 0.15);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+/* ================================================================== */
+/* ================================================================== */
+/* ================================================================== */
+
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    width: 100%;
+    height: 15vh;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-icons {
+    width: 20px;
+}
+
+.main-navigation,
+.user-dropdown,
+#header-form {
+    display: none;
+}
+
+.brand-logo {
+    display: block;
+    width: 7.5rem;
+    height: auto;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* USER ICONs */
+.user-icons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.work {
+    width: 25px;
+}
+
+.seen {
+    width: 25px;
+}
+
+.good {
+    width: 25px;
+}
+
+.mobile-menubtn {
+    font-size: 2rem;
+    width: 25px;
+}
+
+/* ICON BUTTON */
+.user-icons button {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-inline: 1.5rem;
+    width: 100%;
+}
+
+.hero-left {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.text-left {
+    color: var(--primary-color);
+}
+
+#afirst {
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.h1-first {
+    padding: 1.5rem;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+/* FEATURED CATEGORIES */
+.section-label,
+.h2-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 1rem;
+}
+
+.category-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    width: 60%;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

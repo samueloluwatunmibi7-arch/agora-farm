@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agora - Fresh groceries delivered to your door.">
+    <!--BRAND FAVICON-->
+    <link rel="android-chrome-icon" sizes="192x192" href="./images/agora/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/agora/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/agora/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/agora/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--MY CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/Css" href="css/style.css">
+    <title>Agora | Fresh Grocery</title>
+</head>
+
+<body>
+    <!--WEBSITE HEADER-->
+    <header>
+        <!--HEADER TOP-->
+        <div class="header-top">
+            <!--BRAND LOGO-->
+            <a href="index.html">
+                <img class="brand-logo" src="./images/agora.png" alt="Agora logo" />
+            </a>
+
+            <!--SEARCH FORMS-->
+            <form id="header-form" action="/search" method="get">
+                <div>
+                    <label for="search" class="visually-hidden">
+                       
+                    </label>
+                    <input type="search" id="search" name="search" placeholder="search" />
+                    <button type="submit" aria-label="submit search"><i data-lucide="search"
+                            aria-hidden="true"></i></button>
+                </div>
+            </form>
+
+            <!--CTA ICONS-->
+            <ul class="user-icons">
+                <li aria-label="user"><i class="work" data-lucide="heart"></i></li>
+                <li aria-label="user"><i class="seen" data-lucide="shopping-cart"></i></li>
+
+                <li aria-label="user"><i class="good" data-lucide="user"></i></li>
+
+
+                <ul aria-hidden="true" class="user-dropdown">
+                    <li><a href="./auth/login.html">Login</a></li>
+                    <li><a href="./auth/register.html">Register</a></li>
+                    <li><a href="./auth/signin.html">Signin</a></li>
+                </ul>
+                </li>
+
+                <!--HAMBURGER MENU-->
+                <button class="mobile-menubtn" type="button" aria-label="menu-btn" aria-controls="main-navigation"
+                    aria-expanded="false">&#9776</button>
+            </ul>
+        </div>
+
+
+        <!--NAVIGATION LINKS-->
+        <nav class="main-navigation" aria-label="main-navigation" data-vissible="false">
+            <ul class="nav-links">
+                <li><a href="index.html" class="btn btn-primary">Home</a></li>
+                <li><a href="about.html" class="btn btn-primary">About us</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact us</a></li>
+                <li><a href="product.html" class="btn btn-primary">Product</a></li>
+                <li><a href="services.html" class="btn btn-primary">Services</a></li>
+                <li><a href="blog.html" class="btn btn-primary">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--HERO SECTION-->
+        <section class="hero-section">
+            <!--LEFT SIDE-->
+            <div class="hero-left">
+                <h1 class="h1-first">Make healthy<br> life with<span class="text-left"> fresh<br></span> grocery
+                </h1>
+
+
+                <a id="afirst" href="products.html" class="btn btn-primary"> Shop Now </a>
+            </div>
+            <!--RIGHT SIDE-->
+            <img class="hero-img" src="./images/grocery.jpg" alt="Fresh vegetables and groceries">
+        </section>
+
+        <!--FEATURED CATEGORIES-->
+        <section class="featured-categories">
+            <header class="section-header">
+                <div>
+                    <p class="section-label">Categories</p>
+                    <h2 class="h2-first">Featured Categories</h2>
+                </div>
+                <a href="categories.html">View All</a>
+            </header>
+            <div class="category-grid">
+                <a href="categories/vegetables.html" class="category-card">
+                    <figure>
+                        <img src="./images/vegetable.jpg" alt="Fresh vegetables">
+                        <figcaption>
+                            Vegetables
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="categories/meat.html" class="category-card">
+                    <figure>
+                        <img src="./images/meat.jpg" alt="Fresh meat">
+                        <figcaption>
+                            Fresh Meat
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="categories/fish.html" class="category-card">
+                    <figure>
+                        <img src="./images/fresh-fish.jpg" alt="Fresh fish">
+                        <figcaption>
+                            Fresh Fish
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="categories/bakery.html" class="category-card">
+                    <figure>
+                        <img src="./images/bakery.jpg" alt="Fresh bakery products">
+                        <figcaption>
+                            Bakery
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="categories/dairy.html" class="category-card">
+                    <figure>
+                        <img src="./images/dairy.jpg" alt="Fresh dairy products">
+                        <figcaption>
+                            Dairy
+                        </figcaption>
+                    </figure>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!--PROMOTIONAL FEATURES-->
+        <section class="promotional-features">
+            <div class="promotion-card">
+                <div class="promotion-content">
+                    <p class="discount">Flat 20% Discount</p>
+                    <h2> Purely Fresh Vegetables</h2>
+                    <a href="categories/vegetables.html">Shop Now</a>
+                </div>
+                <figure>
+                    <img src="./images/vegetable.jpg" alt="Fresh vegetables">
+                </figure>
+            </div>
+
+            <div class="promotion-card">
+                <div class="promotion-content">
+                    <p class="discount">Flat 25% Discount</p>
+                    <h2>Fresh Fruits,Pure Quality</h2>
+                    <a href="categories/fruits.html">Shop Now</a>
+                </div>
+                <figure>
+                    <img src="./images/basket-fresh-fruit.jpg" alt="Fresh fruits">
+                </figure>
+            </div>
+        </section>
+
+        <!--FEATURED PRODUCTS-->
+        <section class="featured-products">
+            <header class="section-header">
+                <div>
+                    <p class="section-label">Products</p>
+                    <h2>Featured Products</h2>
+                </div>
+                <a href="products.html">View All</a>
+            </header>
+
+            <div class="product-grid">
+                <!-- PRODUCT 1 -->
+                <div class="product-card">
+                    <a href="products/niko-500g.html">
+                        <figure>
+                            <img src="./images/niko.jpg" alt="Niko 500 gram product">
+                            <figcaption>
+                                Niko 500g
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <div class="product-information">
+                        <h3>Niko 500g</h3>
+
+                        <p class="product-price">$5.99</p>
+                        <button type="button" aria-label="Add Niko 500g to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 2 -->
+                <div class="product-card">
+                    <a href="products/turkey-loaf.html">
+                        <figure>
+                            <img src="./images/turkey-loaf.jpg" alt="Turkey loaf">
+                            <figcaption>
+                                Turkey Loaf
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Turkey Loaf</h3>
+                        <p class="product-price">$9.99</p>
+                        <button type="button" aria-label="Add Turkey Loaf to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 3 -->
+                <div class="product-card">
+                    <a href="products/sakito-oil.html">
+                        <figure>
+                            <img src="./images/sakito-oil.jpg" alt="Sakito cooking oil">
+                            <figcaption>
+                                Sakito Oil
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Sakito Oil</h3>
+                        <p class="product-price">$3.99</p>
+                        <button type="button" aria-label="Add Sakito Oil to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 4 -->
+                <div class="product-card">
+                    <a href="products/cheddar.html">
+                        <figure>
+                            <img src="./images/cheddar.jpg" alt="Cheddar cheese">
+                            <figcaption>
+                                Cheddar
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Cheddar</h3>
+                        <p class="product-price">$12.99</p>
+                        <button type="button" aria-label="Add Cheddar to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 5 -->
+                <div class="product-card">
+                    <a href="products/kimchi-flavour.html">
+                        <figure>
+                            <img src="./images/kimchi.jpg" alt="Kimchi flavour product">
+                            <figcaption>
+                                Kimchi Flavour
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Kimchi Flavour</h3>
+                        <p class="product-price"> $5.99</p>
+                        <button type="button" aria-label="Add Kimchi Flavour to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 6 -->
+                <div class="product-card">
+                    <a href="products/yogurt.html">
+                        <figure>
+                            <img src="./images/yogurt.jpg" alt="Yogurt">
+                            <figcaption>
+                                Yogurt
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Yogurt</h3>
+                        <p class="product-price">$12.99</p>
+                        <button type="button" aria-label="Add Yogurt to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 7 -->
+                <div class="product-card">
+                    <a href="products/mango-noodles.html">
+                        <figure>
+                            <img src="./images/mango-noodles.jpg" alt="Mango noodles">
+                            <figcaption>
+                                Mango Noodles
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Mango Noodles</h3>
+                        <p class="product-price"> $8.99</p>
+                        <button type="button" aria-label="Add Mango Noodles to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 8 -->
+                <div class="product-card">
+                    <a href="products/instant-noodles.html">
+                        <figure>
+                            <img src="./images/instant-noodles.jpg" alt="Instant noodles">
+                            <figcaption>
+                                Instant Noodles
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="product-information">
+                        <h3>Instant Noodles</h3>
+                        <p class="product-price">$20.99</p>
+                        <button type="button" aria-label="Add Instant Noodles to cart">
+                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-action">
+                <a href="products.html">See More</a>
+            </div>
+        </section>
+
+        <!--SUMMER DISCOUNT-->
+        <section class="summer-discount">
+            <div class="discount-content">
+                <p class="section-label">Summer Offer</p>
+                <h2>Summer Discount</h2>
+                <p>Get 20% off selected fresh groceries.</p>
+                <div class="countdown" aria-label="Summer discount countdown">
+                    <span><strong>04</strong>Days</span>
+                    <span><strong>14</strong>Hours</span>
+                    <span><strong>48</strong>Minutes</span>
+                    <span><strong>18</strong>Seconds</span>
+                </div>
+                <a href="offers.html">Shop Now</a>
+            </div>
+            <figure class="discount-visual">
+                <img src="./images/grocery.jpg" alt="Fresh vegetables in a grocery basket">
+            </figure>
+        </section>
+
+        <!--DEALS OF THE DAY-->
+        <section class="deals-of-the-day">
+            <header class="section-header">
+                <div>
+                    <p class="section-label">Today's Deals</p>
+                    <h2>Deals of the Day</h2>
+                </div>
+                <a href="deals.html">View All</a>
+            </header>
+
+            <div class="deal-grid">
+                <div class="deal-card">
+                    <a href="products/quaker-oats.html">
+                        <figure>
+                            <img src="./images/quaker-oats.jpg" alt="Quaker oats">
+                            <figcaption>
+                                Quaker Oats
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <h3>Quaker Oats</h3>
+                    <p>$5.99</p>
+                </div>
+                <div class="deal-card">
+                    <a href="products/white-oats.html">
+                        <figure>
+                            <img src="./images/white oats.jpg" alt="White oats">
+                            <figcaption>
+                                White Oats
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <h3>White Oats</h3>
+                    <p>$8.99</p>
+                </div>
+                <div class="deal-card">
+                    <a href="products/peanut.html">
+                        <figure>
+                            <img src="./images/peanuts.jpg" alt="Peanut product">
+                            <figcaption>
+                                Peanut
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <h3>Peanut</h3>
+                    <p>$6.99</p>
+                </div>
+                <div class=" deal-card">
+                    <a href="products/magnolia.html">
+                        <figure>
+                            <img src="./images/magnolia.jpg" alt="Magnolia product">
+                            <figcaption>
+                                Magnolia
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <h3>Magnolia</h3>
+                    <p>$7.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="site-footer">
+        <p>&copy; 2026 Agora Grocery.All rights reserved.</p>
+    </footer>
+
+    <!--My Javascript-->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
