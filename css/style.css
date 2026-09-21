@@ -76,9 +76,9 @@ header {
     display: none;
 }
 
-.brand-logo {
+.header-a {
     display: block;
-    width: 7.5rem;
+    width: 30%;
     height: auto;
 }
 
@@ -124,6 +124,35 @@ header {
     cursor: pointer;
 }
 
+/* GENERAL */
+.section {
+    padding: 25px 42px 31px;
+}
+
+.section-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.section-title h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section-title small {
+    display: block;
+    color: #777;
+    font-size: 8px;
+    margin-bottom: 4px;
+}
+
+.section-title>a {
+    color: #666;
+    font-size: 8px;
+}
+
 /* hero section */
 .hero-section {
     display: grid;
@@ -142,13 +171,14 @@ header {
 }
 
 #afirst {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 2rem;
     padding: 0.5rem 1rem;
 }
 
-.h1-first {
-    padding: 1.5rem;
+.hero-left h1 {
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
 }
 
 .hero-img {
@@ -160,28 +190,322 @@ header {
 }
 
 /* FEATURED CATEGORIES */
-.section-label,
-.h2-first{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
+.categories {
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.img-card {
+    height: 92px;
+    overflow: hidden;
+    background-color: grey;
     border-radius: 1rem;
 }
 
-.category-grid{
+#wall {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+/* PROMOTIONS */
+.promotional-features {
+    padding: 8px 42px 34px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.promotion-card {
+    min-height: 165px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 23px;
+}
+
+.promotional-vegetables {
+    background: #eef0e7;
+}
+
+.promotional-fruits {
+    background: #edf2dc;
+}
+
+.promotion-content {
+    position: relative;
+    z-index: 2;
+}
+
+.discount {
+    color: #777;
+    font-size: 7px;
+}
+
+.promotional-features h2 {
+    margin: 7px 0 13px;
+    font-size: 12px;
+    line-height: 1.03;
+    font-weight: 500;
+}
+
+.promotion-img {
+    position: absolute;
+    right: -4%;
+    width: 57%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: linear-gradient(to right, transparent, black 25%);
+}
+
+#asecond {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.h2-second {
+    font-size: 12px;
+    line-height: 1.03;
+    font-weight: 500;
+    margin: 7px 0 13px;
+}
+
+/* FEATURED PRODUCTS */
+.featured-products {
+    padding: 29px 42px 31px;
+    background: var(--secondary-color);
+}
+
+#block {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1rem;
-    width: 60%;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.product-card {
+    min-height: 195px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+#aproduct {
+    height: 112px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+.product-card h3 {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
 }
 
 
 
+.product-price {
+    margin-top: 7px;
+    background-color: var(--primary-color);
+    width: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.container {
+.price-row strong {
+    font-size: 9px;
+}
+
+.price-row button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    color: #fff;
+    background: #62a77e;
+    cursor: pointer;
+}
+
+.section-action {
+    text-align: center;
+    margin-top: 19px;
+}
+
+.see-more {
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 7px;
+    color: #666;
+}
+
+.button {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SUMMER DISCOUNT */
+.summer-discount {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    min-height: 250px;
+    background: #faf9f4;
+}
+
+.discount-content {
+    padding: 38px 42px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    color: #70927e;
+    font-size: 7px;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.discount {
+    margin-top: 4px;
+    margin-bottom: 17px;
+    color: #888;
+    font-size: 16px;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 17px;
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown strong {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.countdown span {
+    color: #999;
+    font-size: 6px;
+}
+
+.countdown i {
+    color: #aaa;
+    font-size: 17px;
+    font-style: normal;
+}
+
+.discount-visual {
+    height: 112px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f4f4f4;
+}
+
+
+.btn {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* DEALS OF THE DAY*/
+.deals {
+    padding-bottom: 45px;
+}
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.adeal {
+    text-align: center;
+}
+
+.deal-card {
+    height: 140px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    background: #f3f3f3;
+    margin-bottom: 8px;
+}
+
+.deal-grid h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.deal-grid p {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    width: 6rem;
+    font-size: 12px;
+}
+
+#aview-all {
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--secondary-bg-color);
 }
