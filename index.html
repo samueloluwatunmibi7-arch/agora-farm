@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agora - Fresh groceries delivered to your door.">
-    
+
     <!--BRAND FAVICON-->
     <link rel="android-chrome-icon" sizes="192x192" href="./images/agora/android-chrome-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/agora/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/agora/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/agora/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="manifest" href="./manifest.json">
-    
+
     <!--MY CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +91,7 @@
                 <h1>Make healthy<br> life with<span class="text-left"> fresh<br></span> grocery
                 </h1>
 
-                <a id="afirst" href="products.html" class="btn btn-primary"> Shop Now </a>
+                <a class="hyperlink" href="products.html" class="btn btn-primary"> Shop Now </a>
             </div>
             <!--RIGHT SIDE-->
             <img class="hero-img" src="./images/grocery.jpg" alt="Fresh vegetables and groceries">
@@ -98,58 +99,58 @@
 
         <!--FEATURED CATEGORIES-->
         <section class="featured-categories">
-            <header class="section-header">
-                <div class="categories">
-                    <h2 class="h2-first">Featured Categories</h2>
-                    <a id="wall" href="categories.html">View All</a>
+            <div class="category">
+                <h2 class="h2-first">Featured Categories</h2>
+
+                <div class="category-grid">
+                    <a href="categories/vegetables.html" class="category-card">
+                        <figure class="cat-text">
+                            <img class="img-card" src="./images/vegetable.jpg" alt="Fresh vegetables">
+                            <figcaption>
+                                Vegetables
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="categories/meat.html" class="category-card">
+                        <figure>
+                            <img class="img-card" src="./images/meat.jpg" alt="Fresh meat">
+                            <figcaption class="figcation">
+                                Fresh Meat
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="categories/fish.html" class="category-card">
+                        <figure>
+                            <img class="img-card" src="./images/fresh-fish.jpg" alt="Fresh fish">
+                            <figcaption>
+                                Fresh Fish
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="categories/bakery.html" class="category-card">
+                        <figure>
+                            <img class="img-card" src="./images/bakery.jpg" alt="Fresh bakery products">
+                            <figcaption>
+                                Bakery
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="categories/dairy.html" class="category-card">
+                        <figure>
+                            <img class="img-card" src="./images/dairy.jpg" alt="Fresh dairy products">
+                            <figcaption>
+                                Dairy
+                            </figcaption>
+                        </figure>
+                    </a>
+
                 </div>
-            </header>
-            <div class="category-grid">
-                <a href="categories/vegetables.html" class="category-card">
-                    <figure class="cat-text">
-                        <img class="img-card" src="./images/vegetable.jpg" alt="Fresh vegetables">
-                        <figcaption>
-                            Vegetables
-                        </figcaption>
-                    </figure>
-                </a>
 
-                <a href="categories/meat.html" class="category-card">
-                    <figure>
-                        <img class="img-card" src="./images/meat.jpg" alt="Fresh meat">
-                        <figcaption class="figcation">
-                            Fresh Meat
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="categories/fish.html" class="category-card">
-                    <figure>
-                        <img class="img-card" src="./images/fresh-fish.jpg" alt="Fresh fish">
-                        <figcaption>
-                            Fresh Fish
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="categories/bakery.html" class="category-card">
-                    <figure>
-                        <img class="img-card" src="./images/bakery.jpg" alt="Fresh bakery products">
-                        <figcaption>
-                            Bakery
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <a href="categories/dairy.html" class="category-card">
-                    <figure>
-                        <img class="img-card" src="./images/dairy.jpg" alt="Fresh dairy products">
-                        <figcaption>
-                            Dairy
-                        </figcaption>
-                    </figure>
-                </a>
-
+                <a class="hyperlink" href="categories.html">View All</a>
             </div>
 
             <!--PROMOTION-->
@@ -158,8 +159,8 @@
                     <div class="promotion-card">
                         <div class="promotion-content">
                             <p class="discount">Flat 20% Discount</p>
-                            <h2 class="h2-second"> Purely Fresh Vegetables</h2>
-                            <a id="asecond" href="categories/vegetables.html">Shop Now</a>
+                            <h2 class="promotional-features-h2"> Purely Fresh Vegetables</h2>
+                            <a class="hyperlink" href="categories/vegetables.html">Shop Now</a>
                         </div>
                         <figure>
                             <img class="promotion-img" src="./images/vegetable.jpg" alt="Fresh vegetables">
@@ -171,8 +172,8 @@
                     <div class="promotion-card">
                         <div class="promotion-content">
                             <p class="discount">Flat 25% Discount</p>
-                            <h2 class="h2-second">Fresh Fruits,Pure Quality</h2>
-                            <a id="asecond" href="categories/fruits.html">Shop Now</a>
+                            <h2 class="promotional-features-h2">Fresh Fruits,Pure Quality</h2>
+                            <a class="hyperlink" href="categories/fruits.html">Shop Now</a>
                         </div>
                         <figure>
                             <img class="promotion-img" src="./images/basket-fresh-fruit.jpg" alt="Fresh fruits">
@@ -186,27 +187,25 @@
         <section class="featured-products">
             <header class="section-header">
                 <div class="products">
-                    <h2 class="h2-first">Featured Products</h2>
+                    <h2 class="h2-first">Featured <span class="text-left">Products</span> </h2>
                 </div>
-                <a id="block" class="btn" href="products.html">View All</a>
+
             </header>
 
             <div class="product-grid">
                 <!-- PRODUCT 1 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/niko-500g.html">
-                        <figure>
-                            <img src="./images/niko.jpg" alt="Niko 500 gram product">
+                    <figure>
+                        <img src="./images/niko.jpg" alt="Niko 500 gram product">
 
-                        </figure>
-                    </a>
+                    </figure>
 
                     <div class="product-information">
-                        <h3>Niko 500g</h3>
+                        <h3 class="product-h3">Niko 500g</h3>
 
                         <p class="product-price">$5.99</p>
-                        <button type="button" aria-label="Add Niko 500g to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Niko 500g to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -214,17 +213,15 @@
 
                 <!-- PRODUCT 2 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/turkey-loaf.html">
-                        <figure>
-                            <img src="./images/turkey-loaf.jpg" alt="Turkey loaf">
+                    <figure>
+                        <img src="./images/turkey-loaf.jpg" alt="Turkey loaf">
 
-                        </figure>
-                    </a>
+                    </figure>
                     <div class="product-information">
-                        <h3>Turkey Loaf</h3>
+                        <h3 class="product-h3">Turkey Loaf</h3>
                         <p class="product-price">$9.99</p>
-                        <button type="button" aria-label="Add Turkey Loaf to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Turkey Loaf to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -232,17 +229,15 @@
 
                 <!-- PRODUCT 3 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/sakito-oil.html">
-                        <figure>
-                            <img src="./images/sakito-oil.jpg" alt="Sakito cooking oil">
+                    <figure>
+                        <img src="./images/sakito-oil.jpg" alt="Sakito cooking oil">
 
-                        </figure>
-                    </a>
+                    </figure>
                     <div class="product-information">
-                        <h3>Sakito Oil</h3>
+                        <h3 class="product-h3">Sakito Oil</h3>
                         <p class="product-price">$3.99</p>
-                        <button type="button" aria-label="Add Sakito Oil to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Sakito Oil to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -250,17 +245,17 @@
 
                 <!-- PRODUCT 4 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/cheddar.html">
-                        <figure>
-                            <img src="./images/cheddar.jpg" alt="Cheddar cheese">
 
-                        </figure>
-                    </a>
+                    <figure>
+                        <img src="./images/cheddar.jpg" alt="Cheddar cheese">
+
+                    </figure>
+
                     <div class="product-information">
-                        <h3>Cheddar</h3>
+                        <h3 class="product-h3">Cheddar</h3>
                         <p class="product-price">$12.99</p>
-                        <button type="button" aria-label="Add Cheddar to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Cheddar to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -268,17 +263,16 @@
 
                 <!-- PRODUCT 5 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/kimchi-flavour.html">
-                        <figure>
-                            <img src="./images/kimchi.jpg" alt="Kimchi flavour product">
+                    <figure>
+                        <img src="./images/kimchi.jpg" alt="Kimchi flavour product">
 
-                        </figure>
-                    </a>
+                    </figure>
                     <div class="product-information">
-                        <h3>Kimchi Flavour</h3>
+                        <h3 class="product-h3">Kimchi Flavour</h3>
                         <p class="product-price"> $5.99</p>
-                        <button type="button" aria-label="Add Kimchi Flavour to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button"
+                            aria-label="Add Kimchi Flavour to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -286,17 +280,17 @@
 
                 <!-- PRODUCT 6 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/yogurt.html">
-                        <figure>
-                            <img src="./images/yogurt.jpg" alt="Yogurt">
 
-                        </figure>
-                    </a>
+                    <figure>
+                        <img src="./images/yogurt.jpg" alt="Yogurt">
+
+                    </figure>
+
                     <div class="product-information">
-                        <h3>Yogurt</h3>
+                        <h3 class="product-h3">Yogurt</h3>
                         <p class="product-price">$12.99</p>
-                        <button type="button" aria-label="Add Yogurt to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Yogurt to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -304,17 +298,17 @@
 
                 <!-- PRODUCT 7 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/mango-noodles.html">
-                        <figure>
-                            <img src="./images/mango-noodles.jpg" alt="Mango noodles">
 
-                        </figure>
-                    </a>
+                    <figure>
+                        <img src="./images/mango-noodles.jpg" alt="Mango noodles">
+
+                    </figure>
+
                     <div class="product-information">
-                        <h3>Mango Noodles</h3>
+                        <h3 class="product-h3">Mango Noodles</h3>
                         <p class="product-price"> $8.99</p>
-                        <button type="button" aria-label="Add Mango Noodles to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button" aria-label="Add Mango Noodles to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -322,17 +316,18 @@
 
                 <!-- PRODUCT 8 -->
                 <div class="product-card">
-                    <a id="aproduct" href="products/instant-noodles.html">
-                        <figure>
-                            <img src="./images/instant-noodles.jpg" alt="Instant noodles">
 
-                        </figure>
-                    </a>
+                    <figure>
+                        <img src="./images/instant-noodles.jpg" alt="Instant noodles">
+
+                    </figure>
+
                     <div class="product-information">
-                        <h3>Instant Noodles</h3>
+                        <h3 class="product-h3">Instant Noodles</h3>
                         <p class="product-price">$20.99</p>
-                        <button type="button" aria-label="Add Instant Noodles to cart">
-                            <i data-lucide="shopping-cart" aria-hidden="true"></i>
+                        <button class="product-information button" type="button"
+                            aria-label="Add Instant Noodles to cart">
+
                             Add to Cart
                         </button>
                     </div>
@@ -340,7 +335,7 @@
             </div>
 
             <div class="section-action">
-                <a class="see-more" href="products.html">See More</a>
+                <a class="hyperlink" href="products.html">See More</a>
             </div>
         </section>
 
@@ -350,77 +345,189 @@
                 <h2 class="section-title">Summer Discount</h2>
                 <p class="discount">Get 20% off selected fresh groceries.</p>
                 <div class="countdown" aria-label="Summer discount countdown">
-                    <span><strong>04</strong>Days</span>
-                    <span><strong>14</strong>Hours</span>
-                    <span><strong>48</strong>Minutes</span>
-                    <span><strong>18</strong>Seconds</span>
+                    <span><strong>04 :</strong><br>Days</span>
+                    <span><strong>14 :</strong><br>Hours</span>
+                    <span><strong>48 :</strong><br>Minutes</span>
+                    <span><strong>18 :</strong><br>Seconds</span>
                 </div>
-                <a class="btn" href="offers.html">Shop Now</a>
+                <a class="hyperlink" href="offers.html">Shop Now</a>
+
+                <figure class="discount-visual">
+                    <img class="summer-img" src="./images/grocery.jpg" alt="Fresh vegetables in a grocery basket">
+                </figure>
             </div>
-            <figure class="discount-visual">
-                <img src="./images/grocery.jpg" alt="Fresh vegetables in a grocery basket">
-            </figure>
         </section>
 
         <!--DEALS OF THE DAY-->
         <section class="deals-of-the-day">
-            <header class="section-header">
-                <div>
-                    <p class="section-label">Today's Deals</p>
-                    <h2>Deals of the Day</h2>
-                </div>
-                <a id="aview-all" href="deals.html">View All</a>
-            </header>
+            <div>
+                <p class="section-label">Today's Deals</p>
+                <h2 class="h2-deal">Deals of the Day</h2>
+            </div>
+
+
 
             <div class="deal-grid">
                 <div class="deal-card">
-                    <a class="adeal" href="products/quaker-oats.html">
-                        <figure>
-                            <img src="./images/quaker-oats.jpg" alt="Quaker oats">
 
-                        </figure>
-                    </a>
-                    <h3>Quaker Oats</h3>
-                    <p>$5.99</p>
+                    <figure>
+                        <img class="img-card" src="./images/quaker-oats.jpg" alt="Quaker oats">
+
+                    </figure>
+
+                    <h3 class="deal-h3">Quaker Oats</h3>
+                    <p class="deal-price">$5.99</p>
                 </div>
                 <div class="deal-card">
-                    <a class="adeal" href="products/white-oats.html">
-                        <figure>
-                            <img src="./images/white oats.jpg" alt="White oats">
 
-                        </figure>
-                    </a>
-                    <h3>White Oats</h3>
-                    <p>$8.99</p>
+                    <figure>
+                        <img class="img-card" src="./images/white oats.jpg" alt="White oats">
+
+                    </figure>
+
+                    <h3 class="deal-h3">White Oats</h3>
+                    <p class="deal-price">$8.99</p>
                 </div>
                 <div class="deal-card">
-                    <a class="adeal" href="products/peanut.html">
-                        <figure>
-                            <img src="./images/peanuts.jpg" alt="Peanut product">
 
-                        </figure>
-                    </a>
-                    <h3>Peanut</h3>
-                    <p>$6.99</p>
+                    <figure>
+                        <img class="deals-img-card" src="./images/peanuts.jpg" alt="Peanut product">
+
+                    </figure>
+
+                    <h3 class="deal-h3">Peanut</h3>
+                    <p class="deal-price">$6.99</p>
                 </div>
                 <div class=" deal-card">
-                    <a class="adeal" href="products/magnolia.html">
-                        <figure>
-                            <img src="./images/magnolia.jpg" alt="Magnolia product">
 
-                        </figure>
-                    </a>
-                    <h3>Magnolia</h3>
-                    <p>$7.99</p>
+                    <figure>
+                        <img class="img-card" src="./images/magnolia.jpg" alt="Magnolia product">
+
+                    </figure>
+
+                    <h3 class="deal-h3">Magnolia</h3>
+                    <p class="deal-price">$7.99</p>
                 </div>
+                <a class="hyperlink" href="deals.html">View All</a>
             </div>
         </section>
     </main>
 
-    <!--FOOTER-->
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
     <footer class="site-footer">
-        <p class="copy-right">&copy; 2026 Agora Grocery.All rights reserved.</p>
+
+        <div class="container footer-grid">
+
+
+            <!-- Company -->
+
+            <div class="footer-company">
+
+                <a href="index.html" class="footer-logo">
+
+                    <span aria-hidden="true">
+                        <img class="brand-logo" src="./images/agora.png" alt="Agora logo" />
+                    </span>
+                </a>
+
+                <p>
+                    Agora Farms: Where nature’s best comes together,
+                    Honest farming, premium quality and Your central source for fresh living.With us, you are secured.
+                </p>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+                    <li><a href="index.html" class="btn btn-primary"><span>✓</span>Home</a></li>
+                    <li><a href="about.html" class="btn btn-primary"><span>✓</span>About us</a></li>
+                    <li><a href="contact.html" class="btn btn-primary"><span>✓</span>Contact us</a></li>
+                    <li><a href="product.html" class="btn btn-primary"><span>✓</span>Product</a></li>
+                    <li><a href="services.html" class="btn btn-primary"><span>✓</span>Services</a></li>
+                    <li><a href="blog.html" class="btn btn-primary"><span>✓</span>Blog</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Address -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Visit Us
+                </h3>
+
+                <p>
+                    Lummong Hub 425 East Java<br>
+                    Modern City Block ABC 123
+                </p>
+
+
+                <h3 class="days-heading">
+                    Days Open
+                </h3>
+
+                <p>
+                    Everyday<br>
+                    24/7
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer bottom -->
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-content">
+
+                <p>
+                    All right Reserved -
+                    Agora | Grocery
+                </p>
+
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        t
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        ◎
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        in
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
+
 
     <!--My Javascript-->
     <script src="https://unpkg.com/lucide@latest"></script>
